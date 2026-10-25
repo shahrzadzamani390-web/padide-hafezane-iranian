@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>پدیده حافظان ایرانیان | Padideh Hafezan Iranianian | ظاهرة حافظي الإيرانيين</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/font-face.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Sahel',Tahoma,Arial,sans-serif}
+:root{--gold:#d4af37;--gold2:#f5d76e;--purple:#2a1050;
+--gold-shine:linear-gradient(135deg,#7a5a00 0%,#d4af37 25%,#fff3b0 50%,#d4af37 75%,#7a5a00 100%)}
+body{background:#f6f3ec;line-height:2;color:#222}
+header{background:#2a1050;color:#fff;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:3px solid var(--gold)}
+header .t{font-weight:bold;font-size:16px}
+nav{display:flex;align-items:center;gap:6px}
+nav a{color:#fff;text-decoration:none;margin:0 10px;font-size:14px}
+nav a:hover{color:var(--gold2)}
+.lang-group{display:flex;gap:6px;align-items:center}
+.lang-btn{background:transparent;border:1px solid var(--gold);color:var(--gold2);border-radius:20px;padding:4px 14px;font-size:12.5px;cursor:pointer;font-family:inherit}
+.lang-btn:hover{background:rgba(212,175,55,.2)}
+.lang-btn.active{background:var(--gold);color:#2a1050;font-weight:bold}
+.hero{background:radial-gradient(circle at 85% 20%,#7b4bc4 0%,#3d1a6e 45%,#1a0833 100%);color:#fff;padding:60px 5%;display:flex;align-items:center;gap:40px}
+.hero .txt{flex:1.3;text-align:right}
+.hero .logo-box{flex:.7;text-align:center}
+.hero .logo-box img{width:260px;height:260px;border-radius:50%;object-fit:cover;background:#fff;border:5px solid var(--gold);box-shadow:0 0 60px rgba(212,175,55,.55),0 0 120px rgba(212,175,55,.25)}
+.hero .logo-box p{color:var(--gold2);font-size:13px;margin-top:12px}
+.badge{border:1px solid var(--gold);color:var(--gold2);padding:7px 20px;border-radius:30px;font-size:13px;display:inline-block;margin-bottom:14px;background:rgba(0,0,0,.25)}
+.gold-text{background:var(--gold-shine);-webkit-background-clip:text;background-clip:text;color:transparent;font-size:42px;font-weight:900;line-height:1.7}
+.hero .txt p.sub{font-size:17px;color:#eee;margin-top:6px}
+.hero .txt p.mini{font-size:13.5px;color:#d9ccff;margin-top:6px}
+.btn{display:inline-block;background:var(--gold-shine);color:#2a1050;padding:13px 42px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:20px;box-shadow:0 6px 20px rgba(212,175,55,.4)}
+.btn-outline{display:inline-block;background:transparent;color:var(--gold2);border:2px solid var(--gold);padding:11px 30px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:20px;margin-inline-start:10px;font-size:14px}
+.btn-outline:hover{background:rgba(212,175,55,.15)}
+section{padding:50px 5%;max-width:1150px;margin:auto}
+h2.t{text-align:center;color:var(--purple);font-size:26px;margin-bottom:8px}
+p.s{text-align:center;color:var(--purple);font-size:16px;font-weight:bold;margin-bottom:26px}
+p.s-big{text-align:center;color:#3d1a6e;font-size:17px;font-weight:bold;margin-bottom:26px;line-height:2.2}
+.kid{padding:0 5%;max-width:1150px;margin:auto}
+.kid img{width:100%;border-radius:16px;display:block;box-shadow:0 8px 30px rgba(42,16,80,.25);border:3px solid var(--gold)}
+.kid .cap{text-align:center;color:var(--purple);font-size:21px;margin-top:12px;font-weight:900}
+.vijeh{padding:30px 5%;max-width:1150px;margin:auto;display:none}
+.vijeh-box{background:linear-gradient(135deg,#f5d76e,#d4af37);border:2px solid #b88b13;border-radius:18px;padding:38px 32px;color:#2a1050;box-shadow:0 10px 34px rgba(42,16,80,.18);text-align:right}
+.vijeh-box h3{color:#2a1050;font-size:28px;font-weight:900;margin-bottom:14px;text-align:center}
+.vijeh-box p{font-size:19px;line-height:2.6;color:#2a1050;font-weight:bold;text-align:justify}
+.card{background:#fff;border-radius:14px;padding:26px 20px;border-top:5px solid var(--gold);box-shadow:0 4px 18px rgba(0,0,0,.07);text-align:center;font-size:17px;font-weight:900;color:#2a1050;line-height:2.2}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.gal{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.g{background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 18px rgba(0,0,0,.07)}
+.g img{width:100%;height:200px;object-fit:cover;display:block;background:#ddd}
+.g div{background:#2a1050;color:var(--gold2);text-align:center;padding:10px;font-size:13px}
+.police{background:#2a1050;border:2px solid var(--gold);color:#fff;text-align:center;border-radius:14px;padding:26px 18px;font-size:15px;margin-top:18px}
+.police b{color:var(--gold2)}
+footer{background:#1a0833;color:#ccc;text-align:center;padding:24px 5%;font-size:13.5px;line-height:2.2}
+footer b{color:var(--gold2)}
+footer a{color:var(--gold2);text-decoration:none}
+html[lang="en"] .hero .txt,html[lang="en"] .card,html[lang="en"] .vijeh-box{text-align:left}
+html[lang="en"] .vijeh-box p{text-align:left}
+html[lang="en"] h2.t,html[lang="en"] p.s,html[lang="en"] p.s-big,html[lang="en"] .kid .cap,html[lang="en"] footer,html[lang="en"] .police,html[lang="en"] .vijeh-box h3{text-align:center}
+@media(max-width:800px){.hero{flex-direction:column}.hero .logo-box img{width:200px;height:200px}.gold-text{font-size:30px}.kid .cap{font-size:17px}.vijeh-box h3{font-size:23px}.vijeh-box p{font-size:16px}.card{font-size:15px}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<a href="index.html" data-fa="خانه" data-en="Home" data-ar="الرئيسية">خانه</a>
+<a href="services.html" data-fa="خدمات و تماس" data-en="Services & Contact" data-ar="الخدمات والاتصال">خدمات و تماس</a>
+<span class="lang-group">
+<button class="lang-btn active" data-lang="fa" onclick="setLang('fa')">فارسی</button>
+<button class="lang-btn" data-lang="en" onclick="setLang('en')">English</button>
+<button class="lang-btn" data-lang="ar" onclick="setLang('ar')">عربي</button>
+</span>
+</nav>
+<div class="t" data-fa="پدیده حافظان ایرانیان" data-en="Padideh Hafezan Iranianian" data-ar="مؤسسة ظاهرة حافظي الإيرانيين">پدیده حافظان ایرانیان</div>
+</header>
+
+<div class="hero">
+<div class="txt">
+<div class="badge" data-fa="دارای پروانه پلیس پیشگیری فراجا — بخش خصوصی تحت نظارت پلیس" data-en="Licensed by FARAJA Prevention Police — Private sector under police supervision" data-ar="حاصل على ترخيص من شرطة الوقاية في فراجا — قطاع خاص تحت إشراف الشرطة">دارای پروانه پلیس پیشگیری فراجا — بخش خصوصی تحت نظارت پلیس</div>
+<div class="gold-text" data-fa="صیانت نوین فیزیکی سرمایه‌گذاری" data-en="Modern Physical Protection of Investments" data-ar="الحماية المادية الحديثة للاستثمارات">صیانت نوین فیزیکی سرمایه‌گذاری</div>
+<p class="sub" data-fa="تهدیدات اقتصادی را جدی بگیریم" data-en="Take economic threats seriously" data-ar="لنأخذ التهديدات الاقتصادية على محمل الجد">تهدیدات اقتصادی را جدی بگیریم</p>
+<p class="mini" data-fa="تأسیس ۱۳۹۳ | ثبت ۳۴۵۴۵ | مدیریت امنیت کسب‌وکار در سراسر ایران" data-en="Est. 2014 | Reg. 34545 | Business security management across Iran" data-ar="التأسيس 2014 | السجل 34545 | إدارة أمن الأعمال في جميع أنحاء إيران">تأسیس ۱۳۹۳ | ثبت ۳۴۵۴۵ | مدیریت امنیت کسب‌وکار در سراسر ایران</p>
+<a class="btn" href="services.html" data-fa="درخواست طرح امنیت فیزیکی" data-en="Request Physical Security Plan" data-ar="طلب خطة الأمن المادي">درخواست طرح امنیت فیزیکی</a>
+<a class="btn-outline" href="#vijeh" onclick="toggleVijeh(event)" data-fa="ویژه مقابله با جنگ اقتصادی" data-en="Countering Economic Warfare" data-ar="خاص بمواجهة الحرب الاقتصادية">ویژه مقابله با جنگ اقتصادی</a>
+</div>
+<div class="logo-box"><img src="logo.png" alt="logo"><p data-fa="سپر مطمئن سرمایه شما" data-en="Your trusted investment shield" data-ar="درعكم الموثوق لاستثماراتكم">سپر مطمئن سرمایه شما</p></div>
+</div>
+
+<div class="kid" style="margin-top:30px">
+<img src="amniat.jpg" alt="امنیت اقتصادی">
+<div class="cap" data-fa="امنیت اقتصادی، ضامن آینده سرمایه‌گذاری شماست" data-en="Economic security guarantees the future of your investment" data-ar="الأمن الاقتصادي ضامنٌ لمستقبل استثماراتكم">امنیت اقتصادی، ضامن آینده سرمایه‌گذاری شماست</div>
+</div>
+
+<div class="vijeh" id="vijeh">
+<div class="vijeh-box">
+<h3 data-fa="ویژه مقابله با جنگ اقتصادی" data-en="Special Program: Countering Economic Warfare" data-ar="برنامج خاص: مواجهة الحرب الاقتصادية">ویژه مقابله با جنگ اقتصادی</h3>
+<p data-fa="مؤسسه پدیده حافظان ایرانیان در راستای امنیت اقتصادی، به‌زودی برای مجموعه‌های اقتصادی دولتی و بخش خصوصی، کارگاه‌های آموزشی یک‌روزه ویژه مدیران اقتصادی در خصوص مدیریت امنیت اقتصادی در شرایط امنیتی و جنگ، با مشارکت کارشناسان و مربیان آموزشی یگان‌های ویژه فراجا برگزار می‌نماید. منتظر درخواست مجموعه‌های اقتصادی برای برنامه‌ریزی کارگاه‌های آموزشی یک‌روزه (رایگان) هستیم." data-en="Padideh Hafezan Iranianian Institute, in line with economic security, will soon hold one-day specialized training workshops for managers of governmental and private economic entities on managing economic security under security and war conditions, with the participation of experts and training instructors of FARAJA Special Units. We look forward to receiving requests from economic entities to plan one-day training workshops (free)." data-ar="معهد ظاهرة حافظي الإيرانيين، في إطار الأمن الاقتصادي، سيقيم قريباً ورشات تدريبية ليوم واحد خاصة بالمدراء الاقتصاديين حول إدارة الأمن الاقتصادي في الظروف الأمنية والحرب، بمشاركة خبراء ومدربي الوحدات الخاصة في فراجا، للمجموعات الاقتصادية الحكومية والخاصة. ننتظر طلبات المجموعات الاقتصادية لتخطيط ورشات تدريبية ليوم واحد (مجاناً).">مؤسسه پدیده حافظان ایرانیان در راستای امنیت اقتصادی، به‌زودی برای مجموعه‌های اقتصادی دولتی و بخش خصوصی، کارگاه‌های آموزشی یک‌روزه ویژه مدیران اقتصادی در خصوص مدیریت امنیت اقتصادی در شرایط امنیتی و جنگ، با مشارکت کارشناسان و مربیان آموزشی یگان‌های ویژه فراجا برگزار می‌نماید. منتظر درخواست مجموعه‌های اقتصادی برای برنامه‌ریزی کارگاه‌های آموزشی یک‌روزه (رایگان) هستیم.</p>
+</div>
+</div>
+
+<section>
+<h2 class="t" data-fa="خدمات اصلی ما" data-en="Our Main Services" data-ar="خدماتنا الرئيسية">خدمات اصلی ما</h2>
+<p class="s" data-fa="۳ خدمت شاخص — شرح کامل در صفحه خدمات" data-en="Top 3 services — full list on Services page" data-ar="3 خدمات مميزة — الشرح الكامل في صفحة الخدمات">۳ خدمت شاخص — شرح کامل در صفحه خدمات</p>
+<div class="grid">
+<div class="card" data-fa="۱. مشاوره، طراحی و مدل‌سازی تهدیدات" data-en="1. Threat-based consultation, design & modeling" data-ar="1. الاستشارة والتصميم ونمذجة التهديدات">۱. مشاوره، طراحی و مدل‌سازی تهدیدات</div>
+<div class="card" data-fa="۲. شناسایی نقاط آسیب‌پذیر" data-en="2. Vulnerability assessment" data-ar="2. تحديد النقاط الضعيفة">۲. شناسایی نقاط آسیب‌پذیر</div>
+<div class="card" data-fa="۳. طرح حفاظت فیزیکی" data-en="3. Physical protection planning" data-ar="3. خطة الحماية المادية">۳. طرح حفاظت فیزیکی</div>
+</div>
+</section>
+
+<section style="padding-top:0">
+<h2 class="t" data-fa="حوزه‌های تحت مأموریت" data-en="Mission Areas" data-ar="مجالات المهام">حوزه‌های تحت مأموریت</h2>
+<p class="s-big" data-fa="بانک‌ها، تأسیسات نفتی، کارخانجات، نیروگاه‌ها، شهرک‌های صنعتی، فولاد و معادن، گردشگری و سایر مراکز" data-en="Banks, oil facilities, factories, power plants, industrial towns, steel & mines, tourism and other centers" data-ar="البنوك، المنشآت النفطية، المصانع، محطات الطاقة، المدن الصناعية، الصلب والمناجم، السياحة وغيرها من المراكز">بانک‌ها، تأسیسات نفتی، کارخانجات، نیروگاه‌ها، شهرک‌های صنعتی، فولاد و معادن، گردشگری و سایر مراکز</p>
+<div class="gal">
+<div class="g"><img src="bank.jpg" alt="bank"><div data-fa="بانک‌ها، خزانه و اسکورت وجوه و طلا" data-en="Banks, treasury & cash/gold escort" data-ar="البنوك والخزانة ومرافقة الأموال والذهب">بانک‌ها، خزانه و اسکورت وجوه و طلا</div></div>
+<div class="g"><img src="naft.jpg" alt="oil"><div data-fa="نفت، گاز و پتروشیمی" data-en="Oil, gas & petrochemical" data-ar="النفط والغاز والبتروكيماويات">نفت، گاز و پتروشیمی</div></div>
+<div class="g"><img src="karkhane.jpg" alt="factory"><div data-fa="کارخانجات و نیروگاه خورشیدی" data-en="Factories & solar power plants" data-ar="المصانع ومحطات الطاقة الشمسية">کارخانجات و نیروگاه خورشیدی</div></div>
+</div>
+<div class="police" data-fa="دارای پروانه فعالیت صادره از انتظامی پلیس پیشگیری فراجا — بخش خصوصی تحت نظارت پلیس" data-en="Licensed by FARAJA Prevention Police — Private sector under police supervision" data-ar="حاصل على رخصة نشاط صادرة عن قيادة شرطة الوقاية في فراجا — قطاع خاص تحت إشراف الشرطة">دارای <b>پروانه فعالیت صادره از انتظامی پلیس پیشگیری فراجا</b> — بخش خصوصی تحت نظارت پلیس</div>
+</section>
+
+<footer><span data-fa="شرکت حفاظتی مراقبتی پدیده حافظان ایرانیان" data-en="Padideh Hafezan Iranianian Security Company" data-ar="شركة ظاهرة حافظي الإيرانيين للحماية والحراسة">شرکت حفاظتی مراقبتی <b>پدیده حافظان ایرانیان</b></span> | 09129472514 | 02177186219<br><span data-fa="تهران، میدان رسالت، خیابان فرجام، پلاک ۶۲۱، واحد ۳" data-en="Tehran, Resalat Sq., Farjam St., No. 621, Unit 3" data-ar="طهران، ميدان رسالت، شارع فرجام، رقم 621، الوحدة 3">تهران، میدان رسالت، خیابان فرجام، پلاک ۶۲۱، واحد ۳</span><br><span>ایمیل / Email / البريد: </span><a href="mailto:padide128@gmail.com">padide128@gmail.com</a></footer>
+
+<script>
+let cur='fa';
+function toggleVijeh(event){
+  event.preventDefault();
+  const section=document.getElementById('vijeh');
+  const isHidden=getComputedStyle(section).display==='none';
+  section.style.display=isHidden?'block':'none';
+  if(isHidden) section.scrollIntoView({behavior:'smooth',block:'start'});
+}
+function setLang(l){
+  cur=l;
+  document.documentElement.lang=l;
+  document.documentElement.dir=(l==='en')?'ltr':'rtl';
+  document.querySelectorAll('[data-fa]').forEach(el=>{
+    let v=el.getAttribute('data-'+l);
+    if(v!==null) el.innerHTML=v;
+  });
+  document.querySelectorAll('.lang-btn').forEach(b=>{
+    b.classList.toggle('active',b.dataset.lang===l);
+  });
+}
+function toggleLang(){
+  let order=['fa','en','ar'];
+  let i=order.indexOf(cur);
+  setLang(order[(i+1)%3]);
+}
+</script>
+</body>
+</html>
