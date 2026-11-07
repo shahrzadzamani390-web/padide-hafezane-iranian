@@ -53,6 +53,13 @@ p.s-big{text-align:center;color:#3d1a6e;font-size:17px;font-weight:bold;margin-b
 footer{background:#1a0833;color:#ccc;text-align:center;padding:24px 5%;font-size:13.5px;line-height:2.2}
 footer b{color:var(--gold2)}
 footer a{color:var(--gold2);text-decoration:none}
+
+/* Music player */
+.music-player{position:fixed;inset-inline-end:24px;bottom:24px;z-index:9999}
+#musicButton{display:inline-flex;align-items:center;gap:9px;background:var(--gold-shine);color:var(--purple);border:1px solid var(--gold);border-radius:30px;padding:12px 20px;font-size:14px;font-weight:bold;cursor:pointer;box-shadow:0 5px 18px rgba(42,16,80,.28);font-family:inherit;transition:transform .2s,box-shadow .2s}
+#musicButton:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(42,16,80,.32)}
+#musicButton:focus-visible{outline:3px solid var(--purple);outline-offset:3px}
+@media(max-width:600px){.music-player{bottom:16px;inset-inline-end:16px}#musicButton{padding:10px 16px;font-size:13px}}
 html[lang="en"] .hero .txt,html[lang="en"] .card,html[lang="en"] .vijeh-box{text-align:left}
 html[lang="en"] .vijeh-box p{text-align:left}
 html[lang="en"] h2.t,html[lang="en"] p.s,html[lang="en"] p.s-big,html[lang="en"] .kid .cap,html[lang="en"] footer,html[lang="en"] .police,html[lang="en"] .vijeh-box h3{text-align:center}
@@ -79,7 +86,7 @@ html[lang="en"] h2.t,html[lang="en"] p.s,html[lang="en"] p.s-big,html[lang="en"]
 <div class="gold-text" data-fa="صیانت نوین فیزیکی سرمایه‌گذاری" data-en="Modern Physical Protection of Investments" data-ar="الحماية المادية الحديثة للاستثمارات">صیانت نوین فیزیکی سرمایه‌گذاری</div>
 <p class="sub" data-fa="تهدیدات اقتصادی را جدی بگیریم" data-en="Take economic threats seriously" data-ar="لنأخذ التهديدات الاقتصادية على محمل الجد">تهدیدات اقتصادی را جدی بگیریم</p>
 <p class="mini" data-fa="تأسیس ۱۳۹۳ | ثبت ۳۴۵۴۵ | مدیریت امنیت کسب‌وکار در سراسر ایران" data-en="Est. 2014 | Reg. 34545 | Business security management across Iran" data-ar="التأسيس 2014 | السجل 34545 | إدارة أمن الأعمال في جميع أنحاء إيران">تأسیس ۱۳۹۳ | ثبت ۳۴۵۴۵ | مدیریت امنیت کسب‌وکار در سراسر ایران</p>
-<a class="btn" href="services.html" data-fa="درخواست طرح امنیت فیزیکی" data-en="Request Physical Security Plan" data-ar="طلب خطة الأمن المادي">درخواست طرح امنیت فیزیکی</a>
+<a class="btn" href="services.html" data-fa="خدمات ما" data-en="Our Services" data-ar="خدماتنا">خدمات ما</a>
 <a class="btn-outline" href="#vijeh" onclick="toggleVijeh(event)" data-fa="ویژه مقابله با جنگ اقتصادی" data-en="Countering Economic Warfare" data-ar="خاص بمواجهة الحرب الاقتصادية">ویژه مقابله با جنگ اقتصادی</a>
 </div>
 <div class="logo-box"><img src="logo.png" alt="logo"><p data-fa="سپر مطمئن سرمایه شما" data-en="Your trusted investment shield" data-ar="درعكم الموثوق لاستثماراتكم">سپر مطمئن سرمایه شما</p></div>
@@ -118,7 +125,18 @@ html[lang="en"] h2.t,html[lang="en"] p.s,html[lang="en"] p.s-big,html[lang="en"]
 <div class="police" data-fa="دارای پروانه فعالیت صادره از انتظامی پلیس پیشگیری فراجا — بخش خصوصی تحت نظارت پلیس" data-en="Licensed by FARAJA Prevention Police — Private sector under police supervision" data-ar="حاصل على رخصة نشاط صادرة عن قيادة شرطة الوقاية في فراجا — قطاع خاص تحت إشراف الشرطة">دارای <b>پروانه فعالیت صادره از انتظامی پلیس پیشگیری فراجا</b> — بخش خصوصی تحت نظارت پلیس</div>
 </section>
 
-<footer><span data-fa="شرکت حفاظتی مراقبتی پدیده حافظان ایرانیان" data-en="Padideh Hafezan Iranianian Security Company" data-ar="شركة ظاهرة حافظي الإيرانيين للحماية والحراسة">شرکت حفاظتی مراقبتی <b>پدیده حافظان ایرانیان</b></span> | 09129472514 | 02177186219<br><span data-fa="تهران، میدان رسالت، خیابان فرجام، پلاک ۶۲۱، واحد ۳" data-en="Tehran, Resalat Sq., Farjam St., No. 621, Unit 3" data-ar="طهران، ميدان رسالت، شارع فرجام، رقم 621، الوحدة 3">تهران، میدان رسالت، خیابان فرجام، پلاک ۶۲۱، واحد ۳</span><br><span>ایمیل / Email / البريد: </span><a href="mailto:padide128@gmail.com">padide128@gmail.com</a></footer>
+<footer><span data-fa="مؤسسه پدیده حافظان" data-en="Padideh Hafezan Institute" data-ar="مؤسسة ظاهرة حافظي الإيرانيين">مؤسسه <b>پدیده حافظان</b></span> | 09129472514 | 02177186219<br><span data-fa="تهران، میدان رسالت، خیابان فرجام، پلاک ۶۲۱، واحد ۳" data-en="Tehran, Resalat Sq., Farjam St., No. 621, Unit 3" data-ar="طهران، ميدان رسالت، شارع فرجام، رقم 621، الوحدة 3">تهران، میدان رسالت، خیابان فرجام، پلاک ۶۲۱، واحد ۳</span><br><span>ایمیل / Email / البريد: </span><a href="mailto:padide128@gmail.com">padide128@gmail.com</a></footer>
+
+
+<div class="music-player">
+  <audio id="siteMusic" preload="none" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+  <button id="musicButton" type="button" aria-label="پخش موسیقی" onclick="toggleMusic()">
+    <span aria-hidden="true">♫</span>
+    <span id="musicLabel">پخش موسیقی</span>
+  </button>
+</div>
 
 <script>
 let cur='fa';
@@ -140,12 +158,46 @@ function setLang(l){
   document.querySelectorAll('.lang-btn').forEach(b=>{
     b.classList.toggle('active',b.dataset.lang===l);
   });
+  updateMusicButton();
 }
 function toggleLang(){
   let order=['fa','en','ar'];
   let i=order.indexOf(cur);
   setLang(order[(i+1)%3]);
 }
+
+const siteMusic=document.getElementById('siteMusic');
+const musicLabel=document.getElementById('musicLabel');
+const musicTexts={
+  fa:{play:'پخش موسیقی',pause:'توقف موسیقی'},
+  en:{play:'Play music',pause:'Pause music'},
+  ar:{play:'تشغيل الموسيقى',pause:'إيقاف الموسيقى'}
+};
+
+function updateMusicButton(){
+  const state=siteMusic.paused?'play':'pause';
+  musicLabel.textContent=musicTexts[cur][state];
+  document.getElementById('musicButton').setAttribute(
+    'aria-label',musicTexts[cur][state]
+  );
+}
+
+async function toggleMusic(){
+  if(siteMusic.paused){
+    try{
+      await siteMusic.play();
+    }catch(error){
+      console.error('Music playback failed:',error);
+    }
+  }else{
+    siteMusic.pause();
+  }
+  updateMusicButton();
+}
+
+siteMusic.addEventListener('play',updateMusicButton);
+siteMusic.addEventListener('pause',updateMusicButton);
+updateMusicButton();
 </script>
 </body>
 </html>
